@@ -1,12 +1,12 @@
+import elements.Car;
+import elements.CarGenerator;
 import exceptions.CarNameLengthException;
 import exceptions.CarNamesCanNotBeEmptyException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

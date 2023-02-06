@@ -1,3 +1,5 @@
+package elements;
+
 public class Car {
     private static final int START_LOCATION = 1;
     private int location;

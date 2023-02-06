@@ -1,4 +1,5 @@
-import elements.StringUtils;
+package elements;
+
 import exceptions.CarNameLengthException;
 import exceptions.CarNamesCanNotBeEmptyException;
 
