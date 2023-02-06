@@ -5,8 +5,8 @@ import java.util.List;
 
 public class WinnerDiscriminator {
 
-    public static List<Car> getWinners(List<Car> candidates) {
-        return chooseWinners(candidates);
+    public static Winner getWinners(List<Car> candidates) {
+        return new Winner(chooseWinners(candidates));
     }
 
     private static List<Car> chooseWinners(List<Car> candidates) {

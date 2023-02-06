@@ -21,7 +21,7 @@ public class WinnerDiscriminatorTest {
         bmw.moveForward();
 
         List<Car> cars = List.of(benz, bmw, audi);
-        List<Car> winners = WinnerDiscriminator.getWinners(cars);
+        List<Car> winners = WinnerDiscriminator.getWinners(cars).getCars();
 
         assertThat(winners).hasSize(1);
         assertThat(winners.get(0).getCarName()).isEqualTo("benz");
@@ -40,7 +40,7 @@ public class WinnerDiscriminatorTest {
         bmw.moveForward();
 
         List<Car> cars = List.of(benz, bmw, audi);
-        List<Car> winners = WinnerDiscriminator.getWinners(cars);
+        List<Car> winners = WinnerDiscriminator.getWinners(cars).getCars();
 
         assertThat(winners).hasSize(2);
     }
