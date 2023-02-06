@@ -1,5 +1,5 @@
-import elements.Car;
-import elements.CarGenerator;
+import domain.Car;
+import domain.CarGenerator;
 import exceptions.CarNameLengthException;
 import exceptions.CarNamesCanNotBeEmptyException;
 import org.junit.jupiter.api.Assertions;

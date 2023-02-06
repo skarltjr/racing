@@ -1,4 +1,4 @@
-import elements.TryCount;
+import domain.TryCount;
 import exceptions.NotValidNumberException;
 import exceptions.NotValidTryCountInputException;
 import org.junit.jupiter.api.Assertions;

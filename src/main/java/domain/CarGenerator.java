@@ -1,7 +1,8 @@
-package elements;
+package domain;
 
 import exceptions.CarNameLengthException;
 import exceptions.CarNamesCanNotBeEmptyException;
+import utils.StringUtil;
 
 import java.util.List;
 import java.util.stream.Collectors;

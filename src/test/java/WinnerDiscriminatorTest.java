@@ -1,6 +1,5 @@
-import elements.Car;
-import elements.WinnerDiscriminator;
-import org.assertj.core.api.Assertions;
+import domain.Car;
+import domain.WinnerDiscriminator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

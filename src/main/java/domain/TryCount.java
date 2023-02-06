@@ -1,4 +1,4 @@
-package elements;
+package domain;
 
 import exceptions.NotValidNumberException;
 import exceptions.NotValidTryCountInputException;

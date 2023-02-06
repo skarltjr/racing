@@ -1,4 +1,4 @@
-package elements;
+package domain;
 
 public class Car {
     private static final int START_LOCATION = 1;
