@@ -12,7 +12,7 @@ public class CarGenerator {
 
     public static List<Car> generate(String carNameInputs) {
         checkIfCarNamesAreEmpty(carNameInputs);
-        List<String> carNames = StringUtils.parseString(carNameInputs);
+        List<String> carNames = StringUtil.parseString(carNameInputs);
         checkCarNamesSize(carNames);
         checkNameLength(carNames);
         return carNames.stream().map(carName -> new Car(carName)).collect(Collectors.toList());
