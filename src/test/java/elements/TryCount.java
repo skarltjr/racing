@@ -12,8 +12,7 @@ public class TryCount {
 
     private int tryCountInputToNumber(String tryCountInput) {
         checkIfIsEmptyTryCountInput(tryCountInput);
-        checkIfIsInvalidRange(tryCountInput);
-        int toNumber = Integer.parseInt(tryCountInput);
+        int toNumber = checkIfIsInvalidRange(tryCountInput);
         checkIfIsMinus(toNumber);
         return toNumber;
     }
@@ -31,12 +30,14 @@ public class TryCount {
         }
     }
 
-    private void checkIfIsInvalidRange(String tryCountInput) {
+    private int checkIfIsInvalidRange(String tryCountInput) {
+        int value;
         try {
-            Integer.parseInt(tryCountInput);
+            value = Integer.parseInt(tryCountInput);
         }catch (NumberFormatException e){
             throw new NotValidNumberException();
         }
+        return value;
     }
 
 }
